@@ -175,17 +175,16 @@
 
 .hero-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.25rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: white;
-  line-height: 1.2;
+  line-height: 1.15;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .highlight {
   color: var(--color-accent-light);
-  display: block;
 }
 
 .hero-subtitle {
@@ -557,11 +556,12 @@
   right: 20px;
   background: var(--color-primary);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 20px;
   font-size: 0.875rem;
   font-weight: 700;
   z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .lote-badge-premium {
@@ -569,7 +569,7 @@
 }
 
 .lote-content {
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 2rem 2rem;
 }
 
 .lote-title {
@@ -578,20 +578,22 @@
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .lote-code {
   color: var(--color-text-muted);
   font-size: 0.95rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  display: block;
 }
 
 .lote-surface {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
   border-bottom: 2px solid var(--color-border);
 }
 
@@ -661,28 +663,35 @@
 .lote-details {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .detail-row {
   display: flex;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.detail-row:last-of-type {
+  border-bottom: none;
 }
 
 .detail-row.financing {
   background: linear-gradient(135deg, #e8f4ea 0%, transparent 100%);
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 8px;
   border: none;
   margin-top: 0.5rem;
+  font-weight: 600;
 }
 
 .detail-value {
   font-weight: 700;
   color: var(--color-primary);
+  font-size: 1.05rem;
 }
 
 .btn-lote {
@@ -809,6 +818,7 @@
   font-size: 0.875rem;
   font-weight: 700;
   border-bottom-left-radius: 12px;
+  z-index: 10;
 }
 
 .financing-badge-best {
@@ -816,7 +826,7 @@
 }
 
 .financing-content {
-  padding: 2.5rem 2rem;
+  padding: 3rem 2rem 2.5rem;
 }
 
 .financing-title {
@@ -826,13 +836,16 @@
   color: var(--color-primary);
   margin-bottom: 2rem;
   text-align: center;
+  padding-top: 0.5rem;
 }
 
 .financing-detail {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 1rem 0;
   border-bottom: 1px solid var(--color-border);
+  gap: 1rem;
 }
 
 .financing-detail:last-child {
@@ -850,12 +863,16 @@
 .financing-label {
   color: var(--color-text-muted);
   font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .financing-value {
   font-weight: 700;
   color: var(--color-primary);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  text-align: right;
+  line-height: 1.4;
 }
 
 .financing-note {
