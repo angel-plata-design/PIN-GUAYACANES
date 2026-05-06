@@ -44,8 +44,7 @@ const LandingPage = () => {
       <header className="header">
         <div className="header-content">
           <div className="logo">
-            <Home className="logo-icon" />
-            <span>GUAYACANES II</span>
+            <img src="/images/logo-claro.jpg" alt="Guayacanes II Residencial" className="logo-image" />
           </div>
           <div className="header-actions">
             <Button onClick={handleCall} variant="outline" className="btn-call">
@@ -65,7 +64,7 @@ const LandingPage = () => {
           <div className="hero-grid">
             <div className="hero-content">
               <h1 className="hero-title">
-                El Comienzo de tus <span className="highlight">Mejores Momentos</span>
+                Tu Hogar, <span className="highlight">Tu Futuro</span>
               </h1>
               <p className="hero-subtitle">
                 Lotes residenciales desde 144m² en la zona de mayor crecimiento de Mazatlán.
@@ -461,8 +460,7 @@ const LandingPage = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-brand">
-            <Home className="footer-logo-icon" />
-            <span>GUAYACANES II RESIDENCIAL</span>
+            <img src="/images/logo-oscuro.png" alt="Guayacanes II Residencial" className="footer-logo-image" />
           </div>
           <p className="footer-text">
             El comienzo de tus mejores momentos en Mazatlán, Sinaloa

@@ -68,6 +68,12 @@
   letter-spacing: 0.5px;
 }
 
+.logo-image {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
 .logo-icon {
   width: 32px;
   height: 32px;
@@ -1062,6 +1068,12 @@
   margin-bottom: 1rem;
 }
 
+.footer-logo-image {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
 .footer-logo-icon {
   width: 32px;
   height: 32px;
@@ -1206,6 +1218,14 @@
     padding: 0 1rem;
   }
   
+  .logo-image {
+    height: 45px;
+  }
+
+  .footer-logo-image {
+    height: 70px;
+  }
+
   .btn-text {
     display: none;
   }
