@@ -63,7 +63,7 @@ const LandingPage = () => {
         <div className="hero-overlay">
           <div className="hero-content-centered">
             <h1 className="hero-title">
-              Tu Hogar,<br /><span className="highlight">Tu Futuro</span>
+              Invierte en tu <span className="highlight">Patrimonio</span>
             </h1>
             <p className="hero-subtitle">
               Lotes residenciales desde 144m² en la zona de mayor crecimiento de Mazatlán.
