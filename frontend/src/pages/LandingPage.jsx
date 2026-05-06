@@ -44,7 +44,7 @@ const LandingPage = () => {
       <header className="header">
         <div className="header-content">
           <div className="logo">
-            <img src="/images/logo-claro.jpg" alt="Guayacanes II Residencial" className="logo-image" />
+            <img src="/images/guayacanes-logo.png" alt="Guayacanes Residencial" className="logo-image" />
           </div>
           <div className="header-actions">
             <Button onClick={handleCall} variant="outline" className="btn-call">
@@ -61,80 +61,39 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="hero" style={{ backgroundImage: `url(${IMAGES.hero})` }}>
         <div className="hero-overlay">
-          <div className="hero-grid">
-            <div className="hero-content">
-              <h1 className="hero-title">
-                Tu Hogar, <span className="highlight">Tu Futuro</span>
-              </h1>
-              <p className="hero-subtitle">
-                Lotes residenciales desde 144m² en la zona de mayor crecimiento de Mazatlán.
-                Seguridad, tranquilidad y plusvalía garantizada.
-              </p>
-              <div className="hero-features">
-                <div className="hero-feature-item">
-                  <CheckCircle className="hero-feature-icon" />
-                  <span>Ubicación Privilegiada</span>
-                </div>
-                <div className="hero-feature-item">
-                  <CheckCircle className="hero-feature-icon" />
-                  <span>Seguridad 24/7</span>
-                </div>
-                <div className="hero-feature-item">
-                  <CheckCircle className="hero-feature-icon" />
-                  <span>Plusvalía Garantizada</span>
-                </div>
+          <div className="hero-content-centered">
+            <h1 className="hero-title">
+              Tu Hogar, <span className="highlight">Tu Futuro</span>
+            </h1>
+            <p className="hero-subtitle">
+              Lotes residenciales desde 144m² en la zona de mayor crecimiento de Mazatlán.
+              Seguridad, tranquilidad y plusvalía garantizada.
+            </p>
+            <div className="hero-features">
+              <div className="hero-feature-item">
+                <CheckCircle className="hero-feature-icon" />
+                <span>Ubicación Privilegiada</span>
+              </div>
+              <div className="hero-feature-item">
+                <CheckCircle className="hero-feature-icon" />
+                <span>Seguridad 24/7</span>
+              </div>
+              <div className="hero-feature-item">
+                <CheckCircle className="hero-feature-icon" />
+                <span>Plusvalía Garantizada</span>
               </div>
             </div>
-
-            {/* Formulario en el Hero */}
-            <div className="hero-form-wrapper">
-              <Card className="hero-form-card">
-                <CardContent className="hero-form-content">
-                  <h3 className="hero-form-title">Solicita Información</h3>
-                  <p className="hero-form-subtitle">Agenda tu visita hoy mismo</p>
-                  <form onSubmit={handleSubmit} className="hero-form">
-                    <Input
-                      placeholder="Nombre completo"
-                      value={formData.nombre}
-                      onChange={(e) => setFormData({ ...formData, nombre: e.target.value })}
-                      required
-                      className="hero-input"
-                    />
-                    <Input
-                      type="tel"
-                      placeholder="Teléfono"
-                      value={formData.telefono}
-                      onChange={(e) => setFormData({ ...formData, telefono: e.target.value })}
-                      required
-                      className="hero-input"
-                    />
-                    <Input
-                      type="email"
-                      placeholder="Email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                      className="hero-input"
-                    />
-                    <Textarea
-                      placeholder="¿Qué tipo de lote te interesa?"
-                      value={formData.mensaje}
-                      onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
-                      rows={3}
-                      className="hero-input"
-                    />
-                    <Button type="submit" className="btn-hero-form">
-                      Enviar Solicitud
-                    </Button>
-                  </form>
-                  <div className="hero-form-divider">
-                    <span>o comunícate directamente</span>
-                  </div>
-                  <Button onClick={handleWhatsApp} className="btn-hero-whatsapp">
-                    Chatear por WhatsApp
-                  </Button>
-                </CardContent>
-              </Card>
+            <div className="hero-cta-buttons">
+              <Button onClick={handleWhatsApp} size="lg" className="btn-cta-whatsapp">
+                Chatear por WhatsApp
+              </Button>
+              <Button 
+                onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })} 
+                size="lg" 
+                className="btn-cta-contact"
+              >
+                Contáctanos
+              </Button>
             </div>
           </div>
         </div>
@@ -427,32 +386,67 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Contacto - Solo información */}
-      <section id="contacto" className="contact-section-simple">
-        <div className="contact-simple-content">
-          <h2>¿Listo para hacer crecer tu patrimonio?</h2>
-          <p>Comunícate con nosotros y descubre por qué somos tu opción segura</p>
-          
-          <div className="contact-methods">
-            <div className="contact-method">
-              <Phone className="contact-method-icon" />
-              <div>
-                <span className="contact-method-label">Teléfono</span>
-                <a href="tel:6693434283" className="contact-method-value">669-343-4283</a>
+      {/* Contacto con Formulario */}
+      <section id="contacto" className="contact-section">
+        <div className="contact-container">
+          <div className="contact-info">
+            <h2>¿Listo para hacer crecer tu patrimonio?</h2>
+            <p>Comunícate con nosotros y descubre por qué somos tu opción segura</p>
+            
+            <div className="contact-methods">
+              <div className="contact-method">
+                <Phone className="contact-method-icon" />
+                <div>
+                  <span className="contact-method-label">Teléfono</span>
+                  <a href="tel:6693434283" className="contact-method-value">669-343-4283</a>
+                </div>
+              </div>
+              <div className="contact-method">
+                <Mail className="contact-method-icon" />
+                <div>
+                  <span className="contact-method-label">Email</span>
+                  <a href="mailto:info@guayacanes.com.mx" className="contact-method-value">info@guayacanes.com.mx</a>
+                </div>
               </div>
             </div>
-            <div className="contact-method">
-              <Mail className="contact-method-icon" />
-              <div>
-                <span className="contact-method-label">Email</span>
-                <a href="mailto:info@guayacanes.com.mx" className="contact-method-value">info@guayacanes.com.mx</a>
-              </div>
-            </div>
+
+            <Button onClick={handleWhatsApp} size="lg" className="btn-contact-whatsapp">
+              Chatear por WhatsApp
+            </Button>
           </div>
 
-          <Button onClick={handleWhatsApp} size="lg" className="btn-contact-whatsapp">
-            Chatear por WhatsApp
-          </Button>
+          <div className="contact-form-wrapper">
+            <form onSubmit={handleSubmit} className="contact-form">
+              <h3>Solicita Información</h3>
+              <Input
+                placeholder="Nombre completo"
+                value={formData.nombre}
+                onChange={(e) => setFormData({ ...formData, nombre: e.target.value })}
+                required
+              />
+              <Input
+                type="tel"
+                placeholder="Teléfono"
+                value={formData.telefono}
+                onChange={(e) => setFormData({ ...formData, telefono: e.target.value })}
+                required
+              />
+              <Input
+                type="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                required
+              />
+              <Textarea
+                placeholder="Mensaje (opcional)"
+                value={formData.mensaje}
+                onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
+                rows={4}
+              />
+              <Button type="submit" className="btn-submit">Enviar Solicitud</Button>
+            </form>
+          </div>
         </div>
       </section>
 
