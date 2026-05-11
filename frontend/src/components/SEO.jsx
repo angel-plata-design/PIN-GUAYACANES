@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet';
 
 const SEO = () => {
-  const siteUrl = 'https://guayacanes-promo.preview.emergentagent.com';
+  const siteUrl = 'https://angel-plata-design.github.io/PIN-GUAYACANES';
   const imageUrl = `${siteUrl}/images/entrada-1.jpg`;
   
   return (
