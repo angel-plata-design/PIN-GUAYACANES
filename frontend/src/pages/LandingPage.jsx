@@ -8,12 +8,15 @@ import SEO from '../components/SEO';
 import '../styles/landing.css';
 
 // Centralizado para fácil actualización de imágenes - IMÁGENES REALES DEL PROYECTO
+const BASE = process.env.PUBLIC_URL || '';
 const IMAGES = {
-  hero: '/images/entrada-1.jpg',
-  entrada2: '/images/entrada-2.jpg',
-  vistaAerea: '/images/vista-aerea.jpg',
-  entradaNoche: '/images/entrada-noche.jpg',
-  amenidadesAerea: '/images/amenidades-aerea.jpg'
+  hero: `${BASE}/images/entrada-1.jpg`,
+  entrada2: `${BASE}/images/entrada-2.jpg`,
+  vistaAerea: `${BASE}/images/vista-aerea.jpg`,
+  entradaNoche: `${BASE}/images/entrada-noche.jpg`,
+  amenidadesAerea: `${BASE}/images/amenidades-aerea.jpg`,
+  logo: `${BASE}/images/guayacanes-logo.png`,
+  logoOscuro: `${BASE}/images/logo-oscuro.png`,
 };
 
 const LandingPage = () => {
@@ -47,7 +50,7 @@ const LandingPage = () => {
       <header className="header">
         <div className="header-content">
           <div className="logo">
-            <img src="/images/guayacanes-logo.png" alt="Guayacanes Residencial" className="logo-image" />
+            <img src={IMAGES.logo} alt="Guayacanes Residencial" className="logo-image" />
           </div>
           <div className="header-actions">
             <Button onClick={handleCall} variant="outline" className="btn-call">
@@ -454,7 +457,7 @@ const LandingPage = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-brand">
-            <img src="/images/logo-oscuro.png" alt="Guayacanes II Residencial" className="footer-logo-image" />
+            <img src={IMAGES.logoOscuro} alt="Guayacanes II Residencial" className="footer-logo-image" />
           </div>
           <p className="footer-text">
             El comienzo de tus mejores momentos en Mazatlán, Sinaloa
