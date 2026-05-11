@@ -4,6 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
+import SEO from '../components/SEO';
 import '../styles/landing.css';
 
 // Centralizado para fácil actualización de imágenes - IMÁGENES REALES DEL PROYECTO
@@ -31,15 +32,17 @@ const LandingPage = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/526693434283', '_blank');
+    window.open('https://wa.me/526691987570', '_blank');
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:6693434283';
+    window.location.href = 'tel:6691987570';
   };
 
   return (
     <div className="landing-container">
+      <SEO />
+      
       {/* Header */}
       <header className="header">
         <div className="header-content">
@@ -49,7 +52,7 @@ const LandingPage = () => {
           <div className="header-actions">
             <Button onClick={handleCall} variant="outline" className="btn-call">
               <Phone size={18} />
-              <span className="btn-text">669-343-4283</span>
+              <span className="btn-text">669-198-7570</span>
             </Button>
             <Button onClick={handleWhatsApp} className="btn-whatsapp">
               Contactar por WhatsApp
@@ -398,14 +401,14 @@ const LandingPage = () => {
                 <Phone className="contact-method-icon" />
                 <div>
                   <span className="contact-method-label">Teléfono</span>
-                  <a href="tel:6693434283" className="contact-method-value">669-343-4283</a>
+                  <a href="tel:6691987570" className="contact-method-value">669-198-7570</a>
                 </div>
               </div>
               <div className="contact-method">
                 <Mail className="contact-method-icon" />
                 <div>
                   <span className="contact-method-label">Email</span>
-                  <a href="mailto:info@guayacanes.com.mx" className="contact-method-value">info@guayacanes.com.mx</a>
+                  <a href="mailto:ventasguayacanesresidencial@gmail.com" className="contact-method-value">ventasguayacanesresidencial@gmail.com</a>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
   --color-primary: #2c5530;
@@ -181,18 +181,24 @@
   line-height: 1.15;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
 }
 
 .highlight {
   color: var(--color-accent-light);
+  font-weight: 700;
 }
 
 .hero-subtitle {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 2rem;
   line-height: 1.8;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-features {
@@ -488,12 +494,14 @@
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 0.75rem;
+  letter-spacing: -0.3px;
 }
 
 .feature-card p {
   color: var(--color-text-muted);
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 /* Lotes Section */
@@ -514,12 +522,14 @@
   font-weight: 800;
   color: var(--color-primary);
   margin-bottom: 1rem;
+  letter-spacing: -0.5px;
 }
 
 .section-subtitle {
   font-size: 1.15rem;
   color: var(--color-text-muted);
   line-height: 1.8;
+  font-weight: 300;
 }
 
 .lotes-grid {
@@ -579,6 +589,7 @@
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   line-height: 1.2;
+  letter-spacing: -0.3px;
 }
 
 .lote-code {
@@ -586,6 +597,8 @@
   font-size: 0.95rem;
   margin-bottom: 1.75rem;
   display: block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .lote-surface {
@@ -1051,6 +1064,7 @@
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 
 .contact-info > p {
@@ -1059,6 +1073,7 @@
   opacity: 0.95;
   line-height: 1.7;
   max-width: 450px;
+  font-weight: 300;
 }
 
 .contact-methods {
