@@ -1483,8 +1483,8 @@
 
   /* ===== HERO ===== */
   .hero {
-    min-height: auto;
-    padding: 3.5rem 1.25rem 3rem;
+    min-height: 580px;
+    padding: 2rem 1.25rem;
   }
 
   .hero-title {
