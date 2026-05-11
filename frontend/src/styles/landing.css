@@ -1016,6 +1016,7 @@
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
+  word-break: break-word;
 }
 
 .contact-method-value:hover {
@@ -1114,6 +1115,7 @@
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
+  word-break: break-word;
 }
 
 .contact-method-value:hover {
@@ -1344,6 +1346,61 @@
   transform: translateY(-2px);
 }
 
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #25D366;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  background: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whatsapp-icon {
+  width: 28px;
+  height: 28px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.whatsapp-text {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero-grid {
@@ -1428,6 +1485,35 @@
   
   .contact-info h2 {
     font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .contact-info > p {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-methods {
+    align-items: center;
+  }
+
+  .btn-contact-whatsapp {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-form h3 {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.5rem;
   }
 
   .price-amount {
@@ -1436,5 +1522,24 @@
 
   .price-currency {
     font-size: 1.5rem;
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 16px;
+  }
+
+  .whatsapp-text {
+    font-size: 0.85rem;
+  }
+
+  .whatsapp-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-method-value {
+    font-size: 1rem;
   }
 }
