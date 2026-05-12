@@ -375,16 +375,24 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="location-map">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.4986641892973!2d-106.4127!3d23.2494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE0JzU3LjgiTiAxMDbCsDI0JzQ1LjciVw!5e0!3m2!1ses!2smx!4v1234567890"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.8!2d-106.38423!3d23.26152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5b3e2b27ad6f%3A0x8f8b8b8b8b8b8b8b!2sCarretera%20Internacional%20Libre%2C%20Mazatl%C3%A1n-Culiac%C3%A1n%20Km%207%2C%2082270%20Mazatl%C3%A1n%2C%20Sin.!5e0!3m2!1ses!2smx!4v1715000000000!5m2!1ses!2smx"
               width="100%"
               height="400"
               style={{ border: 0, borderRadius: '12px' }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación Guayacanes II"
+              title="Guayacanes II Residencial – Carretera Internacional Libre Mazatlán-Culiacán Km 7"
             ></iframe>
+            <a
+              href="https://maps.google.com/?q=Carretera+Internacional+Libre+Mazatlan-Culiacan+Km+7,+82270+Mazatlan,+Sinaloa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="location-maps-link"
+            >
+              <MapPin size={16} /> Ver en Google Maps
+            </a>
           </div>
         </div>
       </section>

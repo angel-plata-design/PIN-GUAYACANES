@@ -957,8 +957,36 @@
 
 .location-map {
   border-radius: 16px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.location-map iframe {
+  border-radius: 16px;
+  display: block;
+}
+
+.location-maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.25rem;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(44, 85, 48, 0.25);
+}
+
+.location-maps-link:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(44, 85, 48, 0.35);
+  color: white;
 }
 
 /* Contact Section - Simplified */
