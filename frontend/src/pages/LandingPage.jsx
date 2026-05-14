@@ -373,7 +373,7 @@ const LandingPage = () => {
             <span className="location-address-sub">Colonia El Venadillo · Esquina Elpidio Osuna · Mazatlán, Sinaloa</span>
           </div>
           <a
-            href="https://maps.google.com/?q=23.2185,-106.3710"
+            href="https://maps.google.com/?q=Guayacanes+Residencial+Mazatlan"
             target="_blank"
             rel="noopener noreferrer"
             className="location-maps-link"
@@ -413,7 +413,7 @@ const LandingPage = () => {
           {/* Panel derecho: mapa de Google con pin correcto */}
           <div className="location-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.42!2d-106.37393!3d23.21852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzA2LjciTiAxMDbCsDIyJzI2LjAiVw!5e0!3m2!1ses!2smx!4v1715700000000!5m2!1ses!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.7438298874954!2d-106.4131137!3d23.325051500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8698ad6f701a87b7%3A0x6b01ed0781ec5527!2sGuayacanes%20Residencial!5e0!3m2!1ses!2smx!4v1778778577168!5m2!1ses!2smx"
               width="100%"
               height="420"
               style={{ border: 0, borderRadius: '12px' }}
