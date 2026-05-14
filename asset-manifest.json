@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PIN-GUAYACANES/static/css/main.095d8d7f.css",
-    "main.js": "/PIN-GUAYACANES/static/js/main.2e12b523.js",
+    "main.js": "/PIN-GUAYACANES/static/js/main.e8ead02b.js",
     "index.html": "/PIN-GUAYACANES/index.html",
     "main.095d8d7f.css.map": "/PIN-GUAYACANES/static/css/main.095d8d7f.css.map",
-    "main.2e12b523.js.map": "/PIN-GUAYACANES/static/js/main.2e12b523.js.map"
+    "main.e8ead02b.js.map": "/PIN-GUAYACANES/static/js/main.e8ead02b.js.map"
   },
   "entrypoints": [
     "static/css/main.095d8d7f.css",
-    "static/js/main.2e12b523.js"
+    "static/js/main.e8ead02b.js"
   ]
 }
