@@ -17,6 +17,7 @@ const IMAGES = {
   amenidadesAerea: `${BASE}/images/amenidades-aerea.jpg`,
   logo: `${BASE}/images/guayacanes-logo.png`,
   logoOscuro: `${BASE}/images/logo-oscuro.png`,
+  mapaVialidades: `${BASE}/images/mapa_vialidades_guayacanes.png`,
 };
 
 const LandingPage = () => {
@@ -364,36 +365,70 @@ const LandingPage = () => {
           <p className="section-subtitle">En la zona de mayor crecimiento de Mazatlán</p>
         </div>
 
-        <div className="location-content">
-          <div className="location-info">
-            <MapPin className="location-icon" />
-            <div>
-              <h3>Carretera Internacional Libre Mazatlán-Culiacán</h3>
-              <p>Km. 7, Colonia El Venadillo</p>
-              <p>Esquina con calle Elpidio Osuna</p>
-              <p className="location-highlight">Cerca de Galerías Mazatlán, Marina Mazatlán y principales vialidades</p>
+        {/* Dirección destacada */}
+        <div className="location-address-bar">
+          <MapPin className="location-address-icon" />
+          <div>
+            <span className="location-address-main">Ctra. Internacional Libre Mazatlán-Culiacán Km. 7</span>
+            <span className="location-address-sub">Colonia El Venadillo · Esquina Elpidio Osuna · Mazatlán, Sinaloa</span>
+          </div>
+          <a
+            href="https://maps.google.com/?q=23.2185,-106.3710"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="location-maps-link"
+          >
+            <MapPin size={14} /> Ver en Google Maps
+          </a>
+        </div>
+
+        {/* Imagen de vialidades + Mapa */}
+        <div className="location-dual-grid">
+
+          {/* Panel izquierdo: imagen de vialidades + leyenda */}
+          <div className="location-vialidades-panel">
+            <div className="vialidades-img-wrapper">
+              <img
+                src={IMAGES.mapaVialidades}
+                alt="Mapa de vialidades alrededor de Guayacanes Residencial, Mazatlán"
+                className="vialidades-img"
+              />
+            </div>
+            <div className="vialidades-legend">
+              <div className="legend-group">
+                <h4 className="legend-title">Vialidades actuales</h4>
+                <div className="legend-item"><span className="legend-dot" style={{background:'#f4d03f'}}></span>Internacional Mzt-Cln</div>
+                <div className="legend-item"><span className="legend-dot" style={{background:'#a855f7'}}></span>Autopista Mzt-Cln</div>
+                <div className="legend-item"><span className="legend-dot" style={{background:'#38bdf8'}}></span>Libramiento Mzt-Av. Peche Rice</div>
+              </div>
+              <div className="legend-group">
+                <h4 className="legend-title">Vialidades en desarrollo</h4>
+                <div className="legend-item"><span className="legend-dot" style={{background:'#2563eb'}}></span>Av. La Bahía</div>
+                <div className="legend-item"><span className="legend-dot" style={{background:'#ef4444'}}></span>Av. Munich</div>
+                <div className="legend-item"><span className="legend-dot" style={{background:'#22c55e'}}></span>Av. El Palmar</div>
+              </div>
             </div>
           </div>
+
+          {/* Panel derecho: mapa de Google con pin correcto */}
           <div className="location-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.8!2d-106.38423!3d23.26152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5b3e2b27ad6f%3A0x8f8b8b8b8b8b8b8b!2sCarretera%20Internacional%20Libre%2C%20Mazatl%C3%A1n-Culiac%C3%A1n%20Km%207%2C%2082270%20Mazatl%C3%A1n%2C%20Sin.!5e0!3m2!1ses!2smx!4v1715000000000!5m2!1ses!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.42!2d-106.37393!3d23.21852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzA2LjciTiAxMDbCsDIyJzI2LjAiVw!5e0!3m2!1ses!2smx!4v1715700000000!5m2!1ses!2smx"
               width="100%"
-              height="400"
+              height="420"
               style={{ border: 0, borderRadius: '12px' }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Guayacanes II Residencial – Carretera Internacional Libre Mazatlán-Culiacán Km 7"
             ></iframe>
-            <a
-              href="https://maps.google.com/?q=Carretera+Internacional+Libre+Mazatlan-Culiacan+Km+7,+82270+Mazatlan,+Sinaloa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="location-maps-link"
-            >
-              <MapPin size={16} /> Ver en Google Maps
-            </a>
+            <p className="location-map-caption">
+              <MapPin size={14} style={{display:'inline', verticalAlign:'middle', marginRight:'4px'}} />
+              Nos encontramos en el corazón de una zona con gran proyección y desarrollo,
+              respaldada por vialidades actuales y nuevas avenidas ya aprobadas.
+            </p>
           </div>
+
         </div>
       </section>
 
